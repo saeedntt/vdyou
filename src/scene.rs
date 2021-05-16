@@ -8,7 +8,7 @@ pub struct Scene {
 }
 
 impl Scene {
-    fn addAnimation(&mut self, shapes: Vec<MShape>, frames:Range<u64>)-> Result<(), SceneError> {
+    fn add_animation(&mut self, shapes: Vec<MShape>, frames:Range<u64>) -> Result<(), SceneError> {
         if shapes.len() != (frames.end - frames.start) as usize {
             Err(SceneError::new())
         }

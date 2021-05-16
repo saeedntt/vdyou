@@ -2,6 +2,9 @@ mod frame;
 mod transformation;
 mod scene;
 mod mshape;
+mod director;
+mod scenario;
+mod character;
 
 use draw::{Canvas, Drawing, Shape, Point, Style, Color, SvgRenderer, render, RGB};
 use draw::render::bitmap::PNGRenderer;
